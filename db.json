@@ -1,29 +1,44 @@
 {
   "posts": [
     {
-      "id": "1",
-      "author": "typicode",
-      "title": "json-server😁"
+      "id": "7355",
+      "author": "Frank Herbert",
+      "title": "Dűne"
     },
     {
-      "id": "2",
-      "author": "én",
-      "title": "cica"
+      "id": "7598",
+      "author": "H.D. Carlton",
+      "title": "Haunting Adeline - Kísérteni Adeline-t"
     },
     {
-      "id": "a922",
-      "author": "Peti",
-      "title": "Sajt"
+      "id": "a6ff",
+      "author": "Gabriel García Márquez",
+      "title": "Találkozunk augusztusban"
     },
     {
-      "id": "edcd",
-      "author": "Ricsi",
-      "title": "Csoda"
+      "id": "9162",
+      "author": "Holly Jackson",
+      "title": "Jó kislányok első gyilkossága"
     },
     {
-      "id": "517f",
-      "author": "Tim Cook",
-      "title": "Iphone"
+      "id": "6a5c",
+      "author": "Steigervald Krisztián",
+      "title": "Generációk harca - Hogyan értsük meg egymást?"
+    },
+    {
+      "id": "b40d",
+      "author": "Ana Huang",
+      "title": "Twisted Love - Ava & Alex"
+    },
+    {
+      "id": "4e3f",
+      "author": "Diószegi Endre - Szarka Eszter",
+      "title": "Érettségi - Irodalom - Adattár és tesztek"
+    },
+    {
+      "id": "e046",
+      "author": "Bibók Bea",
+      "title": "Ellopott gyermekkor"
     }
   ],
   "comments": [
