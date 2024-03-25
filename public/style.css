@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+
+body {
+    text-align: center;
+    background-color: #DD6E42;
+    font-family: "Wix Madefor Text", sans-serif;
+}
+div#cont {
+    background-color: #E8DAB2;
+    padding: 10px;
+    border-radius: 12px;
+}
+div#cont div {
+    background-color: #C0D6DF;
+    box-shadow: 1px 1px 3px black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 12px;
+    color: black;
+    cursor: pointer;
+}
+div#cont div:hover {
+    background-color: #a4b7bf;
+}
+div.button {
+    background-color:beige;
+    border: solid 1px black;
+}
+
+#visszaGomb {
+    width: 30%;
+    background-color: #C0D6DF;
+}
+
+#visszaGomb:hover {
+    background-color: #a4b7bf;
+}
+
+.gombocska {
+    margin-top: 20px;
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: #EAEAEA;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px black;
+    font-family: "Wix Madefor Text", sans-serif;
+}
+
+.gombocska:hover {
+    background-color: #EAEAEA;
+    box-shadow: 1px 1px 3px black; 
+}
+
+.input {
+    border-radius: 10px;
+    outline: 2px solid #DD6E42;
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e2e2e2;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .input:focus {
+    outline-offset: 5px;
+    background-color: #fff
+  }
