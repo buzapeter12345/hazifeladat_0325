@@ -1,4 +1,4 @@
-# Március 22 órai példa
+# Március 22 órai példa megoldás
 
 Indítás:
 ```bash
