@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "author": "typicode",
+      "title": "json-server😁"
+    },
+    {
+      "id": "2",
+      "author": "én",
+      "title": "cica"
+    },
+    {
+      "id": "a922",
+      "author": "Peti",
+      "title": "Sajt"
+    },
+    {
+      "id": "edcd",
+      "author": "Ricsi",
+      "title": "Csoda"
+    },
+    {
+      "id": "517f",
+      "author": "Tim Cook",
+      "title": "Iphone"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
