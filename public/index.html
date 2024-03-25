@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        var x = id => document.getElementById(id)
+        logic = {
+            f() {
+                fetch("http://localhost:3000/posts/").then(v => v.json()).then(v => {
+                    x("cont").innerHTML = v.map(row => `<div onclick="logic.g('${row.id}', '${row.author}', '${row.title}')">${row.author}: ${row.title}</div>`).join("")
+                })
+            },
+            g(id, author, title) {
+                x("cont").innerHTML=`
+                    <form>
+                        <input class="input" id="i1" value="${author}" /><br>
+                        <input class="input" id="i2" value="${title}" /><br>
+                        <div class="button" onclick="logic.h('${id}')">Módosít</div>
+                        <div class="button" onclick="logic.d('${id}')">Törlés</div>
+                    </form>
+                    <button class="gombocska" id="visszaGomb" onclick="logic.f()">Vissza</button>
+                `
+            },
+            h(id) {
+                tosend = {id, author: x("i1").value, title: x("i2").value}
+                fetch(`http://localhost:3000/posts/${id}`, {method: "PUT", headers: { "Content-Type": "application/json"}, body: JSON.stringify(tosend)})
+            },
+            d(id){
+                todelete = {id, author: x("i1").value, title: x("i2").value}
+                fetch(`http://localhost:3000/posts/${id}`, {method: "DELETE", headers: { "Content-Type": "application/json"}, body: JSON.stringify(todelete)})
+            },
+            n(author, title){
+                x("cont").innerHTML=`
+                <form>
+                    <input class="input" placeholder="Szerző" autocomplete="off" id="i1"/><br>
+                    <input class="input" placeholder="Cím" autocomplete="off" id="i2"/><br>
+                    <div class="button" onclick="logic.u()">Felvesz</div>
+                    </form>
+                    <button class="gombocska" id="visszaGomb" onclick="logic.f()">Vissza</button>
+                `
+               
+            },
+            u(){
+                tosend = {author: x("i1").value, title: x("i2").value}
+                fetch(`http://localhost:3000/posts/`, {method: "POST", headers: { "Content-Type": "application/json"}, body: JSON.stringify(tosend)})
+            }
+        }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="logic.f()">
+    <h1>Bejegyzések</h1>
+    <div id="cont"></div>
+    <button class="gombocska" onclick="logic.n()">Új bejegyzés</button>
+</body>
+</html>
